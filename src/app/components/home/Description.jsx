@@ -1,16 +1,17 @@
 import React from 'react'
 import { useRefs } from '@/app/context/RefContext';
-import { Text } from '@chakra-ui/react'
+import { Text, useColorModeValue } from '@chakra-ui/react'
 import { Element } from 'react-scroll';
 
 export default function Description() {
     const { descriptionRef } = useRefs();
+    const color = useColorModeValue('blackAlpha.700', 'whiteAlpha.700')
     return (
 
         <Text
             as={'p'}
-            size={'md'}
-            color={'whiteAlpha.900'}
+            fontSize={{base:'sm', md:'md'}} 
+            color={color}
             w={'full'}
             p={{ base: '5', md: 0 }}
             id='description'

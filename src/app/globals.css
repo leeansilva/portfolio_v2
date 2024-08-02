@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+body, html{
+  background-color: #090c10;
+}
+
 ::selection {
   background: white;
   color: black;

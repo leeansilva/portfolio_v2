@@ -6,6 +6,7 @@ import { createMultiStyleConfigHelpers } from '@chakra-ui/react'
 import { extendTheme } from '@chakra-ui/react'
 import { Inter } from "next/font/google";
 import { RefProvider } from '../context/RefContext'
+import { HoverProvider } from '../context/HoverContext'
 // import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
 // import '../chakra/style.css'
 
@@ -32,8 +33,10 @@ export default function Providers({ children }) {
   return (
     <ChakraProvider theme={theme}>
       <RefProvider>
-        {/* <ProgressBar color='#364e32' height='3px' /> */}
-        {children}
+        <HoverProvider>
+          {/* <ProgressBar color='#364e32' height='3px' /> */}
+          {children}
+        </HoverProvider>
       </RefProvider>
     </ChakraProvider>
   )

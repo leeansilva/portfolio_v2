@@ -12,7 +12,7 @@ export const metadata = {
 };
 
 const config = {
-  initialColorMode: 'dark', // 'dark' | 'light'
+  initialColorMode: 'dark',
   useSystemColorMode: false,
 }
 
