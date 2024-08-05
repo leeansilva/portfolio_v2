@@ -34,7 +34,7 @@ export default function CardProject({ date, srcImg, title, description, subtitle
                 transition: 'opacity 0.2s'
             }}
         >
-            <Card as={Link} target='_blank' href={to} direction={{ base: 'column', sm: srcImg ? 'column' : 'row' }} overflow='hidden' bg={'none'} p={5}>
+            <Card as={Link} target='_blank' href={to} direction={{ base: 'column', lg: srcImg ? 'column' : 'row' }} overflow='hidden' bg={'none'} p={5}>
                 {
                     srcImg ?
                         <Image

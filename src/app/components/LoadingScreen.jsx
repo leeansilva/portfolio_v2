@@ -11,7 +11,8 @@ export default function LoadingScreen() {
             position={'absolute'}
             zIndex={100000}
             h={'100svh'}
-            w={'100svw'}
+            w={'100%'}
+            overflow={'hidden'}
             bg={bg}
             display={'flex'}
             justifyContent={'center'}

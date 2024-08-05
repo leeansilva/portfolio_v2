@@ -23,7 +23,7 @@ export default function Experience() {
       }}
     >
       <VStack zIndex={10} ref={experienceRef} id='experience' p={0} justifyContent={'center'} alignItems={'flex-start'} width={'100%'} mt={{ base: 20, md: 40 }} gap={10} >
-        <Heading pl={5} as='h4' size={'md'} display={{ base: 'flex', md: 'none' }}>Experiencia</Heading>
+        <Heading position={'sticky'} top={0} pl={5} as='h4' size={'md'} display={{ base: 'flex', md: 'none' }}>Experiencia</Heading>
         {
           experience.map((work, i) => (
 

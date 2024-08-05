@@ -52,9 +52,11 @@ export default function Home() {
         <NavBar />
 
         <VStack
-          width={{ base: '100svw', md: '50%' }}
+          width={{ base: '100%', md: '50%' }}
           pt={{ base: 5, md: 20 }}
           pb={{ base: 0, md: 20 }}
+          pr={{base:0, md:5}}
+          className="derecha"
         >
           <motion.div
             initial="hidden"
@@ -64,6 +66,7 @@ export default function Home() {
           >
             <Heading mt={{ base: 10, md: 0 }} pl={5} as='h4' size={'md'} display={{ base: 'flex', md: 'none' }}>Sobre mi</Heading>
             <Description />
+            
             <Experience name='experience' />
             <Projects name='projects' />
             <Footer />
@@ -72,8 +75,8 @@ export default function Home() {
 
         <IconButton
           position={'absolute'}
-          right={{ base: 5, md: 20 }}
-          top={{ base: 10, md: 20 }}
+          right={{ base: 5, md: 5, lg:10, xl:20 }}
+          top={{ base: 5, md: 5, lg:5, xl:20 }}
           borderRadius={'50%'}
           aria-label='Color mode'
           icon={colorMode === 'light' ? <IconSun /> : <IconMoon />}

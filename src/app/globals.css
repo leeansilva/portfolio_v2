@@ -4,8 +4,9 @@
   margin: 0;
 }
 
-body, html{
+body{
   background-color: #090c10;
+  overflow: auto !important;
 }
 
 ::selection {

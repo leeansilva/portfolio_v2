@@ -20,7 +20,7 @@ export default function NavBar() {
         <Box
             display={'flex'}
             flexDir={{ base: 'column', md: 'column' }}
-            width={{ base: '100vw', md: '50%' }}
+            width={{ base: '100%', md: '50%' }}
             h={{ base: 'max-content', md: '100vh' }}
             position={{ base: 'relative', md: 'sticky' }}
             top={0}
@@ -47,10 +47,10 @@ export default function NavBar() {
             </VStack>
 
             <HStack mt={{base:5, md:0}} gap={5} width={{base:'70%', md:'max-content'}} justify={'space-between'}>
-                <Text as={Link} href={'#'} _hover={{color:colorHover}} ><IconBrandGithub size={'34px'} /></Text>
-                <Text as={Link} href={'#'} _hover={{color:colorHover}} ><IconBrandLinkedin size={'34px'} /></Text>
-                <Text as={Link} href={'#'} _hover={{color:colorHover}} ><IconBrandInstagram size={'34px'} /></Text>
-                <Text as={Link} href={'#'} _hover={{color:colorHover}} ><IconBrandWhatsapp size={'34px'} /></Text>
+                <Text as={Link} href={'https://github.com/leeansilva'} _hover={{color:colorHover}} ><IconBrandGithub size={'34px'} /></Text>
+                <Text as={Link} href={'https://www.linkedin.com/in/leandrosilva-/'} _hover={{color:colorHover}} ><IconBrandLinkedin size={'34px'} /></Text>
+                <Text as={Link} href={'https://www.instagram.com/leeansilva_/'} _hover={{color:colorHover}} ><IconBrandInstagram size={'34px'} /></Text>
+                <Text as={Link} href={'https://api.whatsapp.com/send/?phone=%2B541135654619&text=Hola%20+Lean!%20+me+gust%C3%B3%20tu%20portfolio!...+&type=phone_number&app_absent=0'} _hover={{color:colorHover}} ><IconBrandWhatsapp size={'34px'} /></Text>
             </HStack>
         </Box>
     )
