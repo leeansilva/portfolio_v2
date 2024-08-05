@@ -1,6 +1,6 @@
 import { Box, useColorModeValue } from '@chakra-ui/react'
 import React from 'react'
-import AnimatedSVG from './AnimatedSvg'
+import AnimatedSVG from '../components/AnimatedSVG'
 import { motion } from 'framer-motion';
 
 export default function LoadingScreen() {
