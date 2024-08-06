@@ -54,7 +54,7 @@ export default function Projects() {
             href={'https://github.com/leeansilva'}
             target='_blank'
           >
-            <Text ml={{base:5, md:0}} fontSize={{base:'md', md:'lg'}}>{texts.links[1]}</Text>
+            <Text ml={{base:5, md:0}} fontSize={{base:'md', md:'lg'}}>{texts.links[0]}</Text>
           </Link>
           <motion.div
             animate={{ x: linkHover ? 5 : 0 }}

@@ -60,7 +60,7 @@ export default function Experience() {
             href={'https://www.canva.com/design/DAFR-Wj7XB8/5NOIdw9jSXqLlS8XzoKldw/view?utm_content=DAFR-Wj7XB8&utm_campaign=designshare&utm_medium=link&utm_source=editor'}
             target='_blank'
           >
-            <Text ml={{ base: 5, md: 0 }} fontSize={{ base: 'md', md: 'lg' }}>{texts.links[0]}</Text>
+            <Text ml={{ base: 5, md: 0 }} fontSize={{ base: 'md', md: 'lg' }}>{texts.links[1]}</Text>
           </Link>
           <motion.div
             animate={{ x: linkHover ? 5 : 0 }}
