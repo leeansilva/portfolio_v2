@@ -3,15 +3,17 @@ import React, { useContext, useState } from 'react'
 import CardProject from './CardProject'
 import Link from 'next/link'
 import { useRefs } from '@/app/context/RefContext';
-import { experience } from '@/data/experience';
+// import { experience } from '@/data/experience';
 import { IconArrowRight } from '@tabler/icons-react';
 import { HoverContext } from '@/app/context/HoverContext';
 import { motion } from "framer-motion"
+import { useLanguage } from '@/app/context/LanguageContext';
 
 export default function Experience() {
   const { experienceRef } = useRefs();
   const { isHoveredGlobal, setGlobalHover } = useContext(HoverContext);
   const [linkHover, setLinkHover] = useState(false);
+  const { texts, experiences } = useLanguage();
 
   return (
     <motion.div
@@ -25,7 +27,7 @@ export default function Experience() {
       <VStack zIndex={10} ref={experienceRef} id='experience' p={0} justifyContent={'center'} alignItems={'flex-start'} width={'100%'} mt={{ base: 20, md: 40 }} gap={10} >
         <Heading position={'sticky'} top={0} pl={5} as='h4' size={'md'} display={{ base: 'flex', md: 'none' }}>Experiencia</Heading>
         {
-          experience.map((work, i) => (
+          experiences.map((work, i) => (
 
             <CardProject
               key={i}
@@ -58,7 +60,7 @@ export default function Experience() {
             href={'https://www.canva.com/design/DAFR-Wj7XB8/5NOIdw9jSXqLlS8XzoKldw/view?utm_content=DAFR-Wj7XB8&utm_campaign=designshare&utm_medium=link&utm_source=editor'}
             target='_blank'
           >
-            <Text ml={{base:5, md:0}} fontSize={{base:'md', md:'lg'}}>Ver CV</Text>
+            <Text ml={{ base: 5, md: 0 }} fontSize={{ base: 'md', md: 'lg' }}>{texts.links[0]}</Text>
           </Link>
           <motion.div
             animate={{ x: linkHover ? 5 : 0 }}

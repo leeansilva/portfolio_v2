@@ -3,15 +3,17 @@ import React, { useContext, useState } from 'react'
 import CardProject from './CardProject'
 import Link from 'next/link'
 import { useRefs } from '@/app/context/RefContext';
-import { projects } from '@/data/works';
+// import { projects } from '@/data/works';
 import { IconArrowRight } from '@tabler/icons-react';
 import { HoverContext } from '@/app/context/HoverContext';
 import { motion } from "framer-motion"
+import { useLanguage } from '@/app/context/LanguageContext';
 
 export default function Projects() {
   const { projectsRef } = useRefs();
   const { isHoveredGlobal, setGlobalHover } = useContext(HoverContext);
   const [linkHover, setLinkHover] = useState(false);
+  const { texts, projectsGlobal } = useLanguage();
 
   return (
     <motion.div
@@ -21,7 +23,7 @@ export default function Projects() {
       <VStack ref={projectsRef} id='projects' p={0} justifyContent={'center'} alignItems={'flex-start'} width={'100%'} mt={{base:20, md:40}} gap={10} mb={{base:5, md:40}}>
       <Heading pl={5} as='h4' size={'md'} display={{ base: 'flex', md: 'none' }}>Proyectos</Heading>
         {
-          projects?.map((project, i) => (
+          projectsGlobal?.map((project, i) => (
             project.description != null &&
             <CardProject
               key={i}
@@ -52,7 +54,7 @@ export default function Projects() {
             href={'https://github.com/leeansilva'}
             target='_blank'
           >
-            <Text ml={{base:5, md:0}} fontSize={{base:'md', md:'lg'}}>Ver todos mis proyectos</Text>
+            <Text ml={{base:5, md:0}} fontSize={{base:'md', md:'lg'}}>{texts.links[1]}</Text>
           </Link>
           <motion.div
             animate={{ x: linkHover ? 5 : 0 }}

@@ -1,8 +1,10 @@
+import { useLanguage } from '@/app/context/LanguageContext';
 import { Link, Text, useColorModeValue } from '@chakra-ui/react'
 import React from 'react'
 
 export default function Footer() {
-  const color = useColorModeValue('blackAlpha.700', 'whiteAlpha.700')
+  const color = useColorModeValue('blackAlpha.700', 'whiteAlpha.700');
+  const { texts } = useLanguage();
   return (
  
       <Text
@@ -12,7 +14,7 @@ export default function Footer() {
       pl={{base:5, md: '0'}}
       pr={{base:5, md: '0'}}
       >
-        Diseño creado por <Link href='https://brittanychiang.com/'>Brittany Chiang</Link>, codeado en Visual Studio por mí :). Construido con NextJS y Chakra UI, deploy en Vercel. La fuente de todos los textos es Inter.
+        {texts.footer.title}<Link href='https://brittanychiang.com/'>Brittany Chiang</Link>{texts.footer.text1}
       </Text>
     
   )

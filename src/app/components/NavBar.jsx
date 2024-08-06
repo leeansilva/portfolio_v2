@@ -5,16 +5,18 @@ import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandWhatsa
 import { useInView, motion } from 'framer-motion';
 import { useRefs } from '../context/RefContext';
 import Link from 'next/link';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function NavBar() {
     const { descriptionRef, experienceRef, projectsRef } = useRefs();
-    const colorHover = useColorModeValue('orange', 'purple')
+    const { texts } = useLanguage();
     
     const isDescriptionInView = useInView(descriptionRef);
     const isExperienceInView = useInView(experienceRef, { margin: "90% 0px -80% 0px" });
     const isProjectsInView = useInView(projectsRef, { margin: "90% 0px -80% 0px" });
     
-    const color = useColorModeValue('blackAlpha.700', 'whiteAlpha.700')
+    const colorHover = useColorModeValue('orange', 'purple');
+    const color = useColorModeValue('blackAlpha.700', 'whiteAlpha.700');
 
     return (
         <Box
@@ -31,18 +33,18 @@ export default function NavBar() {
             <Flex flexDir={'column'} height={'max-content'} gap={{base:2, md:5}}>
                 <Heading as='h1' size={{base:'2xl', md:'3xl'}}>Leandro Silva</Heading>
                 <Heading as='h4' size={{base:'md', md:'lg'}}>Frontend developer</Heading>
-                <Text maxW={'300px'} as='p' fontSize={{base:'sm', md:'md'}} color={color}>Apasionado por crear experiencias digitales excepcionales.</Text>
+                <Text maxW={'300px'} as='p' fontSize={{base:'sm', md:'md'}} color={color}>{texts.subtitle}</Text>
             </Flex>
 
             <VStack display={{base:'none', md:'flex'}} alignSelf={'flex-start'} alignItems={'flex-start'}>
                 <AnimatedLink href={"description"} isInView={isDescriptionInView}>
-                    Sobre mi
+                    {texts.menu[0]}
                 </AnimatedLink>
                 <AnimatedLink href={"experience"} isInView={isExperienceInView}>
-                    Experiencia
+                    {texts.menu[1]}
                 </AnimatedLink>
                 <AnimatedLink href={"projects"} isInView={isProjectsInView}>
-                    Proyectos
+                    {texts.menu[2]}
                 </AnimatedLink>
             </VStack>
 
