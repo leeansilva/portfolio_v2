@@ -12,7 +12,7 @@ export default function Experience() {
   const { experienceRef } = useRefs();
   const { isHoveredGlobal, setGlobalHover } = useContext(HoverContext);
   const [linkHover, setLinkHover] = useState(false);
-  const { texts, experiences } = useLanguage();
+  const { texts, experiences,language } = useLanguage();
 
   return (
     <motion.div
@@ -58,8 +58,8 @@ export default function Experience() {
               paddingBottom: '2px',
               fontSize: '20px',
             }}
-            href={'https://www.canva.com/design/DAFR-Wj7XB8/5NOIdw9jSXqLlS8XzoKldw/view?utm_content=DAFR-Wj7XB8&utm_campaign=designshare&utm_medium=link&utm_source=editor'}
-            target='_blank'
+            href={language == 'es' ? '/leandro_silvaCV.pdf' : '/leandro_silva_cv(EN).pdf'}
+           
           >
             <Text ml={{ base: 5, md: 0 }} fontSize={{ base: 'md', md: 'lg' }}>{texts.links[1]}</Text>
           </Link>
