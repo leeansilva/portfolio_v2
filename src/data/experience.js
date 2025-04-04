@@ -25,7 +25,7 @@ export const experience = {
             link: 'https://consultingevolutiva.com/'
         },
         {
-            date: '2023',
+            date: '2022',
             rol: 'Desarrollador Fullstack jr',
             place: 'Secretaría de Innovación y Transformación Digital',
             description: "Participé en la identificación y documentación de fallos en el sistema, colaboré directamente con el equipo de UX/UI siguiendo la metodología SCRUM, participe en el desarrollo de un backoffice interno y realizamos CI/CD en Red Hat. ",
@@ -59,7 +59,7 @@ export const experience = {
             link: 'https://consultingevolutiva.com/'
         },
         {
-            date: '2023',
+            date: '2022',
             rol: 'Junior Fullstack Developer',
             place: 'Secretaría de Innovación y Transformación Digital',
             description: "I participated in identifying and documenting system failures, collaborated directly with the UX/UI team following the SCRUM methodology, contributed to the development of an internal back office, and carried out CI/CD on Red Hat.",
