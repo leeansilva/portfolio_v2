@@ -1,9 +1,8 @@
-import { Box, Heading, Text, VStack } from '@chakra-ui/react'
+import { Heading, Text, VStack } from '@chakra-ui/react'
 import React, { useContext, useState } from 'react'
 import CardProject from './CardProject'
 import Link from 'next/link'
 import { useRefs } from '@/app/context/RefContext';
-// import { experience } from '@/data/experience';
 import { IconArrowRight } from '@tabler/icons-react';
 import { HoverContext } from '@/app/context/HoverContext';
 import { motion } from "framer-motion"
@@ -38,6 +37,8 @@ export default function Experience() {
               description={work.description}
               tech={work.tech}
               isHoveredGlobal={isHoveredGlobal}
+              srcImg={work.image}
+              isExperience={true}
             />
 
           ))

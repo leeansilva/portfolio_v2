@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { IconArrowUpRight, IconBrandGithub } from '@tabler/icons-react';
 import Link from 'next/link';
 
-export default function CardProject({ date, srcImg, title, description, subtitle, tech, to, isHoveredGlobal, commitsData, gitHub }) {
+export default function CardProject({ date, srcImg, title, description, subtitle, tech, to, isHoveredGlobal, commitsData, gitHub, isExperience }) {
     const [isHovered, setIsHovered] = useState(false);
     const color = useColorModeValue('blackAlpha.700', 'whiteAlpha.700')
     const colorBadge = useColorModeValue('green', 'purple')
@@ -34,28 +34,42 @@ export default function CardProject({ date, srcImg, title, description, subtitle
                 transition: 'opacity 0.2s'
             }}
         >
-            <Card as={Link} target='_blank' href={to} direction={{ base: 'column', lg: srcImg ? 'column' : 'row' }} overflow='hidden' bg={'none'} p={5}>
+            <Card as={Link} target='_blank' href={to} direction={{ base: 'column', lg: srcImg && !isExperience ? 'column' : 'row' }} overflow='hidden' bg={'none'} p={5}>
                 {
-                    srcImg ?
+                    srcImg && !isExperience ?
                         <Image
                             objectFit='cover'
                             maxW={{ base: '100%', sm: 'full' }}
                             src={srcImg}
                             alt='Caffe Latte'
-                            pt={{base:0,md:5}}
-                            pl={{base:0,md:5}}
+                            pt={{ base: 0, md: 5 }}
+                            pl={{ base: 0, md: 5 }}
                             maxH={'250px'}
                         />
                         :
-                        <Box pt={5} w={{base:'100%',md:'20%'}}>
+                        <Box pt={5} w={{ base: '100%', md: '20%' }}>
                             <Text as={'p'} fontSize='sm'>
                                 {date}
                             </Text>
+
+                            {
+                                srcImg &&
+                                <Image
+                                    objectFit={"cover"}
+                                    w={{ base: "100px" }}
+                                    src={srcImg}
+                                    alt={subtitle}
+                                    h={"50px"}
+                                    borderRadius={"10px"}
+                                    pt={2}
+                                />
+                            }
+
                         </Box>
                 }
 
-                <Stack gap={0} width={{base:'100%',md:srcImg ? '100%' : '80%'}}>
-                    <CardBody p={{base:2, md:5}}>
+                <Stack gap={0} width={{ base: '100%', md: srcImg ? '100%' : '80%' }}>
+                    <CardBody p={{ base: 2, md: 5 }}>
                         <Heading display={'flex'} w={'full'} alignItems={'center'} justifyContent={'space-between'} size='md' color={isHovered ? colorHoverTitle : color} transition='color 0.2s'>
                             <Box display={'flex'} gap={2}>
                                 {title}
@@ -87,12 +101,12 @@ export default function CardProject({ date, srcImg, title, description, subtitle
                             {subtitle}
                         </Text>
 
-                        <Text py='2' color={color} fontSize={{base:'sm', md:'md'}} >
+                        <Text py='2' color={color} fontSize={{ base: 'sm', md: 'md' }} >
                             {description}
                         </Text>
                     </CardBody>
 
-                    <CardFooter mt={0} pl={0} pt={{base:2, md:0}} gap={2} display={'flex'} flexWrap={'wrap'} width={'100%'}>
+                    <CardFooter mt={0} pl={0} pt={{ base: 2, md: 0 }} gap={2} display={'flex'} flexWrap={'wrap'} width={'100%'}>
                         {
                             tech?.map((unit, i) => (
                                 <Badge borderRadius='7px' p={1} colorScheme={colorBadge} key={i}>{unit}</Badge>
