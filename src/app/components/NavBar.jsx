@@ -32,7 +32,7 @@ export default function NavBar() {
         >
             <Flex flexDir={'column'} height={'max-content'} gap={{base:2, md:5}}>
                 <Heading as='h1' size={{base:'2xl', md:'3xl'}}>Leandro Silva</Heading>
-                <Heading as='h4' size={{base:'md', md:'lg'}}>Frontend developer</Heading>
+                <Heading as='h4' size={{base:'md', md:'lg'}}>{texts.roleTitle}</Heading>
                 <Text maxW={'300px'} as='p' fontSize={{base:'sm', md:'md'}} color={color}>{texts.subtitle}</Text>
             </Flex>
 

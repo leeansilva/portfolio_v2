@@ -28,7 +28,7 @@ export const experience = {
             image: 'stdi.jpg'
         },
         {
-            date: '2021 - presente',
+            date: '2022 - presente',
             rol: 'Desarrollador de software independiente',
             place: 'Guarino Inmuebles',
             description: "Desarrollamos una web inmobiliaria con backoffice para Guarino Inmuebles. En el frontend, utilizamos NextJS, ChakraUI, CSS y Framer Motion, mientras que para el backend empleamos NodeJS, Koa.js y SQLite. Además de la implementación técnica, participé en resolución de problemas de infraestructura, toma de decisiones y coordinación de tareas.",
@@ -37,13 +37,22 @@ export const experience = {
             image: 'guarino.jpg'
         },
         {
-            date: '2021 - presente',
+            date: '2022 - presente',
             rol: 'Desarrollador de software independiente',
             place: 'Evolutiva Consulting',
             description: "Como freelance, trabajé en un equipo de tres personas para desarrollar una landing page para Evolutiva Consulting, una consultora de marketing. Utilizamos NextJS, ChakraUI, CSS y librerías de estilos como Framer Motion para crear una página atractiva y funcional. Además de la implementación técnica, colaboré en el diseño y la optimización de la página para mejorar la experiencia del usuario y la conversión de clientes.",
             tech: ['NextJS', 'ChakraUI', 'css', 'Framer Motion'],
             link: 'https://consultingevolutiva.com/',
             image: 'evolutiva.png'
+        },
+        {
+            date: '2024 - presente',
+            rol: 'Desarrollador de software independiente',
+            place: 'Blanco Belén',
+            description: "Como freelance, participé en el desarrollo de un sistema de gestión y una app mobile para una empresa retail: módulos de administración, cobranzas, supervisión, ventas y clientes, más contratos, visitas, reclamos y geolocalización con mapas. Utilicé React, NextJS, NodeJS y SQL.",
+            tech: ['React', 'NextJS', 'NodeJS', 'SQL'],
+            link: 'https://blancobelen.com.ar/sgi/',
+            image: 'blancobelen.png'
         },
 
     ],
@@ -76,7 +85,7 @@ export const experience = {
             image: 'stdi.jpg'
         },
         {
-            date: '2021 - present',
+            date: '2022 - present',
             rol: 'Independent Software Developer',
             place: 'Guarino Inmuebles',
             description: "We developed a real estate website with a back office for Guarino Inmuebles. On the frontend, we used NextJS, ChakraUI, CSS, and Framer Motion, while on the backend, we employed NodeJS, Koa.js, and SQLite. In addition to technical implementation, I participated in solving infrastructure problems, decision-making, and task coordination.",
@@ -85,13 +94,22 @@ export const experience = {
             image: 'guarino.jpg'
         },
         {
-            date: '2021 - present',
+            date: '2022 - present',
             rol: 'Independent Software Developer',
             place: 'Evolutiva Consulting',
             description: "As a freelancer, I worked in a team of three to develop a landing page for Evolutiva Consulting, a marketing consulting firm. We used NextJS, ChakraUI, CSS, and styling libraries like Framer Motion to create an attractive and functional page. In addition to technical implementation, I contributed to the design and optimization of the page to enhance user experience and client conversion.",
             tech: ['NextJS', 'ChakraUI', 'css', 'Framer Motion'],
             link: 'https://consultingevolutiva.com/',
             image: 'evolutiva.png'
+        },
+        {
+            date: '2024 - present',
+            rol: 'Independent Software Developer',
+            place: 'Blanco Belén',
+            description: "As a freelancer, I contributed to an enterprise management system and mobile app for a retail company: administration, collections, supervision, sales, and customer modules, plus contracts, visits, claims, and map-based geolocation. Built with React, NextJS, NodeJS, and SQL.",
+            tech: ['React', 'NextJS', 'NodeJS', 'SQL'],
+            link: 'https://blancobelen.com.ar/sgi/',
+            image: 'blancobelen.png'
         }
     ]
 }

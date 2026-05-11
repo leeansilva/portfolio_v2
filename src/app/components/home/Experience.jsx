@@ -58,7 +58,7 @@ export default function Experience() {
               paddingBottom: '2px',
               fontSize: '20px',
             }}
-            href={language == 'es' ? '/leandro_silvaCV.pdf' : '/leandro_silva_cv(EN).pdf'}
+            href={language == 'es' ? '/cv_leandro_silva.pdf' : '/cv_leandro_silva_en.pdf'}
            
           >
             <Text ml={{ base: 5, md: 0 }} fontSize={{ base: 'md', md: 'lg' }}>{texts.links[1]}</Text>
