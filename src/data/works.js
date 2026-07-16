@@ -2,11 +2,11 @@ export const projects = {
     es: [
         {
             name: 'portfolio_v2',
-            description: 'portfolio_v2 es la versión actual de mi portfolio, con un diseño minimalista inspirado en Britany Chang. Utiliza Next.js, Chakra UI y la API de GitHub para mostrar los proyectos.',
+            description: 'Versión actual de mi portfolio. Next.js, Chakra UI y GitHub API. Diseño minimalista, responsive y con tema claro/oscuro. Deploy en Vercel.',
             html_url: 'https://github.com/leeansilva/portfolio_v2',
             topics: ['github-api', 'nextjs', 'api-rest', 'chakra-ui'],
             srcImg: 'https://repository-images.githubusercontent.com/836833843/c13edfe8-0885-4250-842d-f7d266e08612',
-            liveDemo: ''
+            liveDemo: 'https://leandro-silva.vercel.app/'
         },
         {
             name: 'cursor-hand',
@@ -124,11 +124,11 @@ export const projects = {
     en: [
         {
             name: 'portfolio_v2',
-            description: 'portfolio_v2 is the current version of my portfolio, featuring a minimalist design inspired by Britany Chang. It uses Next.js, Chakra UI, and the GitHub API to display the projects.',
+            description: 'Current version of my portfolio. Next.js, Chakra UI, and GitHub API. Minimalist responsive design with light/dark theme. Deployed on Vercel.',
             html_url: 'https://github.com/leeansilva/portfolio_v2',
             topics: ['github-api', 'nextjs', 'api-rest', 'chakra-ui'],
             srcImg: 'https://repository-images.githubusercontent.com/836833843/c13edfe8-0885-4250-842d-f7d266e08612',
-            liveDemo: ''
+            liveDemo: 'https://leandro-silva.vercel.app/'
         },
         {
             name: 'cursor-hand',

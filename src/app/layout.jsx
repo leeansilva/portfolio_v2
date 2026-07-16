@@ -7,8 +7,8 @@ import { extendTheme } from '@chakra-ui/react'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Leandro Silva",
-  description: "Portfolio de Leandro Silva.",
+  title: "Leandro Silva | Full Stack Software Engineer",
+  description: "Full Stack Software Engineer specialized in legacy modernization, BFF architecture, React, Next.js, and NestJS. 5+ years building scalable web applications. Open to remote opportunities.",
 };
 
 const config = {

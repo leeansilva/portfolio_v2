@@ -21,7 +21,7 @@ export default function Projects() {
       onHoverEnd={() => setGlobalHover(false)}
     >
       <VStack ref={projectsRef} id='projects' p={0} justifyContent={'center'} alignItems={'flex-start'} width={'100%'} mt={{base:20, md:40}} gap={10} mb={{base:5, md:40}}>
-      <Heading pl={5} as='h4' size={'md'} display={{ base: 'flex', md: 'none' }}>Proyectos</Heading>
+      <Heading pl={5} as='h4' size={'md'} display={{ base: 'flex', md: 'none' }}>{texts.menu[2]}</Heading>
         {
           projectsGlobal?.map((project, i) => (
             project.description != null &&

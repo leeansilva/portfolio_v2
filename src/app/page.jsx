@@ -15,7 +15,7 @@ import { useLanguage } from "./context/LanguageContext";
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();
   const [showComponent, setShowComponent] = useState(true);
-  const { switchLanguage, language } = useLanguage();
+  const { switchLanguage, language, texts } = useLanguage();
 
   const bg = useColorModeValue('orange.50', 'blackAlpha.700')
   const bgButton = useColorModeValue('blackAlpha.700', 'orange.50')
@@ -67,7 +67,7 @@ export default function Home() {
             variants={fadeInUp}
             style={{ width: '100%' }}
           >
-            <Heading mt={{ base: 10, md: 0 }} pl={5} as='h4' size={'md'} display={{ base: 'flex', md: 'none' }}>Sobre mi</Heading>
+            <Heading mt={{ base: 10, md: 0 }} pl={5} as='h4' size={'md'} display={{ base: 'flex', md: 'none' }}>{texts.menu[0]}</Heading>
             <Description />
 
             <Experience name='experience' />

@@ -1,45 +1,36 @@
 export const languages = {
     en: {
-      roleTitle: "Fullstack developer",
-      subtitle: "Passionate about creating exceptional digital experiences.",
+      roleTitle: "Full Stack Software Engineer",
+      subtitle: "Legacy modernization, BFF architecture & scalable web apps. Open to remote LATAM & US.",
       menu: ["About", "Experience", "Projects"],
-      links:["See all my projects","View Full Résumé"],
-      description: 
-        {
-          title: "How did I get here? ",
-          text1: "In 2022, my interest took a radical turn when I took a JavaScript course and wrote my first 'alert(\"Hello world\")'. This achievement sparked my curiosity and immersed me in ",
-          text2: "computer science. ",
-          text3: "I am passionate about fullstack development—pairing interfaces with solid services and data. I'm constantly exploring backend and data science too. I am a rare type who enjoys solving design problems and building intelligent interfaces. My focus is on making web applications useful and interesting. To stay updated, I follow news on social media and connect with professionals.",
-          text4: " I am always seeking opportunities and challenges to grow in the IT world."
-        }
-      ,
-      footer: 
-        {
+      links: ["See all my projects", "View Full Résumé"],
+      description: {
+          title: "About me ",
+          text1: "Full Stack Software Engineer with 5+ years of experience building web applications for private companies and public sector organizations. Specialized in ",
+          text2: "legacy platform modernization",
+          text3: ", BFF architectures with NestJS, React, Next.js, and TypeScript. At OCA, I contribute to ePak, a shipping platform with 227,000+ registered users—leading .NET → React migrations, performance optimization, and co-leadership of the Fulfillment module. Previous experience in freelance development (web + mobile) and public sector (React, FastAPI, CI/CD).",
+          text4: " Open to remote opportunities across LATAM, US, and Europe."
+        },
+      footer: {
           title: "Design created by ",
           text1: ", coded in Visual Studio by me :). Built with NextJS and Chakra UI, deployed on Vercel. The font for all text is Inter."
         }
-      
     },
     es: {
-      roleTitle: "Desarrollador fullstack",
-      subtitle: "Apasionado por crear experiencias digitales excepcionales.",
-      menu: ["Sobre mi", "Experiencia", "Proyectos"],
-      links:["Ver todos mis proyectos","Ver CV"],
-      description: 
-        {
-          title: "¿Cómo llegué hasta aquí? ",
-          text1: `En 2022, mi interés dio un giro radical al tomar un curso de JavaScript y escribir mi primer "alert('Hola mundo')". Este logro encendió mi curiosidad y me sumergió en la`,
-          text2: "informática. ",
-          text3: "Me apasiona el desarrollo fullstack: integrar interfaces cuidadas con lógica de negocio y datos; sigo en constante exploración, adentrándome en backend y ciencia de datos. Soy un tipo raro que disfruta resolviendo problemas de diseño y construyendo interfaces inteligentes. Mi enfoque es hacer que las aplicaciones web sean útiles e interesantes. Para mantenerme al día, sigo novedades en redes sociales y me relaciono con profesionales.",
-          text4: " Siempre busco oportunidades y desafíos para crecer en el mundo IT."
-        }
-      ,
-      footer: 
-        {
+      roleTitle: "Full Stack Software Engineer",
+      subtitle: "Modernización legacy, arquitectura BFF y apps web escalables. Abierto a remoto LATAM & US.",
+      menu: ["Sobre mí", "Experiencia", "Proyectos"],
+      links: ["Ver todos mis proyectos", "Ver CV"],
+      description: {
+          title: "Sobre mí ",
+          text1: "Full Stack Software Engineer con más de 5 años de experiencia desarrollando aplicaciones web para empresas privadas y organismos públicos. Especializado en ",
+          text2: "modernización de plataformas legacy",
+          text3: ", arquitecturas BFF con NestJS, React, Next.js y TypeScript. En OCA participo en ePak, plataforma de envíos con más de 227.000 usuarios registrados: migraciones .NET → React, optimización de rendimiento y liderazgo compartido del módulo Fulfillment. Experiencia previa en desarrollo freelance (web + mobile) y sector público (React, FastAPI, CI/CD).",
+          text4: " Abierto a oportunidades remotas en LATAM, US y Europa."
+        },
+      footer: {
           title: "Diseño creado por ",
           text1: ", codeado en Visual Studio por mí :). Construido con NextJS y Chakra UI, deploy en Vercel. La fuente de todos los textos es Inter."
         }
-      
     }
   };
-  
